@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy New Year</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #ffebf0, #ffc2d1);
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #ff4d4d;
+    text-align: center;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #ff6666;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.StoryOnMonth {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+.month {
+    background: #fff0f5;
+    border: 2px solid #ffb3c6;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    width: 300px; /* กำหนดความกว้างของกล่อง */
+    height: 300px; /* กำหนดความสูงของกล่อง */
+    overflow: hidden; /* ซ่อนส่วนที่เกินของรูปภาพ */
+}
+
+.month:hover {
+    transform: scale(1.05); /* ขยายกล่องเล็กน้อย */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* เพิ่มเงาให้ชัดขึ้น */
+    background: #ffe6ea; /* เปลี่ยนสีพื้นหลัง */
+}
+
+.month h1 {
+    font-size: 1.5em;
+    color: #d63384;
+}
+
+.imgAtindex img {
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.month img {
+    width: 200px; /* กำหนดความกว้างของรูปภาพ */
+    height: 200px; /* กำหนดความสูงของรูปภาพ */
+    object-fit: cover; /* ตัดภาพส่วนเกินออกโดยไม่ให้รูปบิดเบี้ยว */
+    border-radius: 10px; /* เพิ่มมุมโค้งมน (ถ้าต้องการ) */
+    display: block; /* จัดรูปภาพให้อยู่ตรงกลางในกล่อง */
+    margin: 0 auto; /* จัดรูปภาพให้อยู่กึ่งกลางแนวนอน */
+}
+
+.nextStory {
+    text-align: center;
+    margin-top: auto; /* ให้ปุ่มติดล่าง */
+    margin-bottom: 20px; /* ระยะห่างจากขอบล่าง */
+}
+
+.nextStory a {
+    display: inline-block; /* ทำให้ลิงก์เป็นบล็อกขนาดเล็ก */
+    background: linear-gradient(to right, #ff7eb3, #ff758c); /* สีพื้นหลังไล่เฉด */
+    color: white; /* สีข้อความ */
+    text-decoration: none; /* เอาขีดเส้นใต้ลิงก์ออก */
+    font-size: 1.2em; /* ขนาดตัวอักษร */
+    font-weight: bold; /* ตัวหนา */
+    padding: 10px 20px; /* เพิ่มพื้นที่ภายในปุ่ม */
+    border-radius: 25px; /* มุมโค้งมน */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* เงาใต้ปุ่ม */
+    transition: background 0.3s, transform 0.2s; /* เอฟเฟกต์เวลา hover */
+}
+
+.nextStory a:hover {
+    background: linear-gradient(to right, #ff758c, #ff7eb3); /* เปลี่ยนเฉดสีเมื่อ hover */
+    transform: scale(1.05); /* ขยายปุ่มเล็กน้อย */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* เพิ่มเงา */
+}
+
+
+</style>
+
+<body>
+    <header>
+        <h1>🎅 Happy New Year, My Love! 🎆</h1>
+        <p>This year is full of love and happiness because of you 💖</p>
+    </header>
+
+    <div class="StoryOnMonth">
+        <div class="month">
+            <h1>January</h1>
+            <div class="imgAtindex">
+                <img src="\static\images\pic_jan.JPG" alt="My Image">
+            </div>
+        </div>
+
+        <div class="month">
+            <h1>February</h1>
+            <div class="imgAtindex">
+                <img src="\static\images\pic_feb.jpg" alt="My Image">
+            </div>
+        </div>
+
+        <div class="month">
+            <h1>March</h1>
+            <div class="imgAtindex">
+                <img src="\static\images\pic_mar.jpg" alt="My Image">
+            </div>
+        </div>
+
+        <div class="month">
+            <h1>April</h1>
+            <div class="imgAtindex">
+                <img src="\static\images\pic_apr.jpg" alt="My Image">
+            </div>
+        </div>
+
+        <div class="month">
+            <h1>May</h1>
+            <div class="imgAtindex">
+                <img src="\static\images\pic_may.jpg" alt="My Image">
+            </div>
+        </div>
+
+        <div class="month">
+            <h1>June</h1>
+            <div class="imgAtindex">
+                <img src="\static\images\pic_jun.jpg" alt="My Image">
+            </div>
+        </div>
+
+        <div class="month">
+            <h1>July</h1>
+            <div class="imgAtindex">
+                <img src="\static\images\pic_jul.jpg" alt="My Image">
+            </div>
+        </div>
+
+        <div class="month">
+            <h1>August</h1>
+            <div class="imgAtindex">
+                <img src="\static\images\pic_aug.jpg" alt="My Image">
+            </div>
+        </div>
+
+        <div class="month">
+            <h1>September</h1>
+            <div class="imgAtindex">
+                <img src="\static\images\pic_sep.jpg" alt="My Image">
+            </div>
+        </div>
+
+        <div class="month">
+            <h1>October</h1>
+            <div class="imgAtindex">
+                <img src="\static\images\pic_oct.jpg" alt="My Image">
+            </div>
+        </div>
+
+        <div class="month">
+            <h1>November</h1>
+            <div class="imgAtindex">
+                <img src="\static\images\pic_nov.jpg" alt="My Image">
+            </div>
+        </div>
+
+        <div class="month">
+            <h1>December</h1>
+            <div class="imgAtindex">
+                <img src="\static\images\pic_dec.jpg" alt="My Image">
+            </div>
+        </div>
+
+        
+    </div>
+    
+    <div class="nextStory">
+        <a href="two_page.html">Next Story</a>
+    </div>
+    
+    
+</body>
+</html>
